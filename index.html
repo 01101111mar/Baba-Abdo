@@ -42,6 +42,7 @@
             justify-content: center;
             gap: 10px; /* Space between images */
             margin-top: 40px; /* Space between button and images */
+            flex-wrap: wrap; /* Allow images to wrap onto the next line */
         }
         .image-gallery a {
             display: inline-block; /* Ensure anchor tags fit the images */
@@ -58,6 +59,21 @@
             border-radius: 50%; /* Makes the image circular */
             object-fit: cover; /* Ensures the image fits well within the circle */
             margin-top: 20px;  
+        }
+        /* Media query for screens smaller than 600px */
+        @media (max-width: 600px) {
+            .image-gallery {
+                flex-direction: column; /* Stack images vertically */
+                align-items: center; /* Center images horizontally */
+                gap: 20px; /* Increase gap for better spacing */
+            }
+            .whatsapp-button {
+                font-size: 30px; /* Adjust font size for smaller screens */
+                padding: 10px 20px; /* Adjust padding for smaller screens */
+            }
+            .head {
+                font-size: 40px; /* Adjust font size for smaller screens */
+            }
         }
     </style>
 </head>
