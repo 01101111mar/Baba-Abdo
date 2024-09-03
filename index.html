@@ -14,14 +14,9 @@
   />
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #111;
+      font-family: 'Cairo', sans-serif;
+      background-color: red;
       margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
     }
     .container {
       text-align: center;
@@ -31,15 +26,11 @@
       background-color: #25d366;
       color: white;
       border: none;
-      padding: 15px 30px;
       font-size: 35px;
+      padding: 5px 10px;
       cursor: pointer;
       border-radius: 5px;
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
     }
     .whatsapp-button:hover {
       background-color: #1da851;
@@ -47,22 +38,14 @@
     .whatsapp-button i {
       font-size: 30px; /* Adjust the size of the icon as needed */
     }
-    .head {
-      font-size: 50px;
-      margin-bottom: 20px;
-    }
-    .image-gallery {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 40px;
-      flex-wrap: wrap;
-    }
+    
     .image-gallery a {
       display: inline-block;
+      text-decoration: none;
     }
     .image-gallery img {
-      max-width: 200px;
+      width: 200px;
+      height: 350px;
       border-radius: 10px;
       cursor: pointer;
     }
@@ -75,23 +58,41 @@
       margin-top: 20px;
     }
     .arabic-text {
-      font-family: 'Cairo', sans-serif; /* Apply Arabic font to Arabic text */
       font-size: 20px; /* Adjust font size as needed */
+      position: sticky;
+      top: 0;
+      background-color: #111;
     }
-    @media (max-width: 600px) {
-      .image-gallery {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-      }
-      .whatsapp-button {
-        width: 300px;
-        margin: 0 auto;
-      }
-      .head {
-        margin-top: 50px;
+
+    .head{
         font-size: 40px;
-      }
+    }
+
+    .desc{
+        background-color: white;
+    }
+
+    .desc p{
+        font-weight: bold;
+        color: #111;
+        padding: 10px;
+        margin-top: 0;
+    }
+
+
+    @media (max-width: 600px) {
+        .image-gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;            
+        }
+        .image-gallery a{
+            flex: 0 1 calc(50% - 20%);
+            margin: 10px;
+        }
+        .image-gallery img{
+            width: 100%;
+        }
     }
   </style>
 </head>
@@ -106,8 +107,8 @@
       <i class="fab fa-whatsapp"></i>
       Order yours now
     </a>
-    <div>
-      <p class="arabic-text">اضغط على المجسم للتحويل الى واتس اب</p>
+    <div class="arabic-text">
+      <p>اضغط على المجسم للتحويل الى واتس اب</p>
     </div>
 
     <div class="image-gallery">
@@ -116,18 +117,153 @@
         target="_blank"
       >
         <img src="img/img1.jpg" alt="Image 1" />
+        <div class="desc">
+            <p>مجسم خشبي شخصين</p>
+        </div>
       </a>
       <a
         href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لست اشخاص"
         target="_blank"
       >
         <img src="img/img2.jpg" alt="Image 2" />
+        <div class="desc">
+            <p>مجسم خشبي ست اشخاص</p>
+        </div>
       </a>
       <a
         href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لاربع اشخاص"
         target="_blank"
       >
         <img src="img/img3.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي اربع اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لاربع اشخاص"
+        target="_blank"
+      >
+        <img src="img/img4.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي اربع اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لاربع اشخاص"
+        target="_blank"
+      >
+        <img src="img/img5.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي اربع اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لاربع اشخاص"
+        target="_blank"
+      >
+        <img src="img/img6.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي اربع اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لاربع اشخاص"
+        target="_blank"
+      >
+        <img src="img/img7.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي اربع اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لثلاث اشخاص"
+        target="_blank"
+      >
+        <img src="img/img8.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي ثلاث اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لست اشخاص"
+        target="_blank"
+      >
+        <img src="img/img9.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي ست اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لاربع اشخاص"
+        target="_blank"
+      >
+        <img src="img/img11.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي اربع اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لثلاث اشخاص"
+        target="_blank"
+      >
+        <img src="img/img12.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي ثلاث اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لثلاث اشخاص"
+        target="_blank"
+      >
+        <img src="img/img13.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي ثلاث اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لثلاث اشخاص"
+        target="_blank"
+      >
+        <img src="img/img14.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي ثلاث اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لثلاث اشخاص"
+        target="_blank"
+      >
+        <img src="img/img15.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي ثلاث اشخاص</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي شخصين اشخاص"
+        target="_blank"
+      >
+        <img src="img/img16.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي شخصين</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لشخصين اشخاص"
+        target="_blank"
+      >
+        <img src="img/img17.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي شخصين</p>
+        </div>
+      </a>
+      <a
+        href="https://wa.me/96170532152?text=I'm%20interested%20in%20image%20مجسم خشبي لثلاث اشخاص"
+        target="_blank"
+      >
+        <img src="img/img18.jpg" alt="Image 3" />
+        <div class="desc">
+            <p>مجسم خشبي ثلاث اشخاص</p>
+        </div>
       </a>
     </div>
     <img src="img/logo.jpg" alt="Logo" class="logo" />
